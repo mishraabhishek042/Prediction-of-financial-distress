@@ -38,7 +38,7 @@ df.head(3)
 # In[5]:
 
 
-df.columns=df.columns.str.replace(".","_")
+df.columns=df.columns.str.replace(".","_") # changing the label value.
 
 
 # In[5]:
@@ -66,7 +66,7 @@ df.shape
 # In[7]:
 
 # In[8]:
-
+#classified the income amount based on taxabel income amount on the basis of good and risky.
 
 df["taxincome"]="<=30000"
 df.loc[df["Taxable_Income"]>=30000,"taxincome"]="Good"
