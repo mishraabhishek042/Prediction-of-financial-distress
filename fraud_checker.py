@@ -37,8 +37,8 @@ df.head(3)
 
 # In[5]:
 
-
-df.columns=df.columns.str.replace(".","_") # changing the label value.
+# changing the label value.
+df.columns=df.columns.str.replace(".","_") 
 
 
 # In[5]:
@@ -66,7 +66,7 @@ df.shape
 # In[7]:
 
 # In[8]:
-#classified the income amount based on taxabel income amount on the basis of good and risky.
+#categorize the income amount based on taxabel income amount on the basis of good and risky.
 
 df["taxincome"]="<=30000"
 df.loc[df["Taxable_Income"]>=30000,"taxincome"]="Good"
@@ -75,8 +75,7 @@ df.loc[df["Taxable_Income"]<=30000,"taxincome"]="Risky"
 
 # In[10]:
 
-# In[9]:
-
+# In[9]
 
 df.drop(["Taxable_Income"],inplace=True,axis=1)
 
@@ -108,7 +107,7 @@ df.columns
 # In[14]:
 
 # In[13]:
-
+#categorizing and encoding the feature for furthe processing
 
 df['Undergrad']=lb.fit_transform(df['Undergrad'])
 df['Marital_Status']=lb.fit_transform(df['Marital_Status'])
@@ -135,10 +134,10 @@ df['taxincome'].unique()
 
 # In[16]:
 
-
+#checking for imbalance data
 df.taxincome.value_counts()
 
-
+#data is balance with 1:4 ratio which is greater than 20%.
 # In[18]:
 
 # In[17]:
@@ -150,7 +149,7 @@ import seaborn as sns
 # In[19]:
 
 # In[18]:
-
+#checking for outlier in population feature using visualization plot
 
 sns.boxplot(df['City_Population']) #check for outliers in population feature
 
