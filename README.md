@@ -5,4 +5,4 @@ The stakeholder's requirement is to predict categorically (financially health/fi
  In this project i decided to use classification model to predict the taxable income which further splitted into two categories "good" and "risky".
  
  Notes on raw data:
-  All the columns have labels and have some correlation relation with target column. there are total 28 columns in the dataset. 
+  All the columns have labels and have some  relation with target column. there are total 28 columns in the dataset. 
