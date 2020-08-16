@@ -1,4 +1,4 @@
-this project is to predict the "financial distress" of employees in the future. the dataset can't be share to public domain to keep the integrity of the organisation. 
+This project is to predict the "financial distress" of employees in the future. the dataset can't be share to public domain to keep the integrity of the organisation. 
 
  The stakeholder's requirement is to predict categorically (financially health/financially distressed), however, this categorical prediction is derived from a numerical data.if the variable "income" is above taxable threshold, the individual is considered healthy. Otherwise, it is considered distressed.
  
